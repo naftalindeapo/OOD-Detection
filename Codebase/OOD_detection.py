@@ -1,12 +1,27 @@
 # import the recquired libraries
 import torch
+import numpy as np
+import pandas as pd
+import seaborn as sns
 import torch.nn as nn
 import torch.optim as optim
 from densenet import DenseNet3
+import torch.nn.functional as F
 import matplotlib.pyplot as plt
+import torchvision.transforms as tvt
 from torch.utils.data import DataLoader
 import torchvision.datasets as datasets
+from torch.utils.data import DataLoader
+from sklearn.metrics import roc_curve, auc
 import torchvision.transforms as transforms
+from pytorch_ood.utils import OODMetrics, ToUnknown
+from torchvision.datasets import CIFAR10, CIFAR100, SVHN
+
+#import detectors
+from pytorch_ood.detector import (ODIN, EnergyBased, Mahalanobis, OpenMax, MaxSoftmax)
+
+# import OOD datasets
+from pytorch_ood.dataset.img import (LSUNResize, LSUNCrop, Textures, TinyImageNetCrop, TinyImageNetResize)
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -73,26 +88,6 @@ print(f"CIFAR-10 Test Accuracy: {calculate_accuracy(DenseNet_model_C10, test_loa
 print(f"CIFAR-10 Train Accuracy: {calculate_accuracy(DenseNet_model_C10,train_loaderC10)}%")
 print(f"CIFAR-100 Test Accuracy: {calculate_accuracy(DenseNet_model_C100, test_loaderC100)}%")
 print(f"CIFAR-100 Train Accuracy: {calculate_accuracy(DenseNet_model_C100, train_loaderC100)}%")
-
-
-import torch
-import numpy as np
-import pandas as pd
-import seaborn as sns
-import torch.nn.functional as F
-import torchvision.transforms as tvt
-from sklearn.metrics import roc_curve, auc
-from torch.utils.data import DataLoader
-import torchvision.transforms as transforms
-from pytorch_ood.utils import OODMetrics, ToUnknown
-from torchvision.datasets import CIFAR10, CIFAR100, SVHN
-
-#import detectors
-from pytorch_ood.detector import (ODIN, EnergyBased, Mahalanobis, OpenMax, MaxSoftmax)
-
-# import OOD datasets
-from pytorch_ood.dataset.img import (LSUNResize, LSUNCrop, Textures, TinyImageNetCrop, TinyImageNetResize)
-
 
 # ### (a) Setup preprocessing
 mean = [x / 255 for x in [125.3, 123.0, 113.9]]
