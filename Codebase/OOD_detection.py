@@ -281,8 +281,8 @@ T_error = pd.DataFrame(Test_error)
 T_error.to_csv('DenseNet-BC_error.csv', index=False)
 T_error
 
-###### Test
-# ### 1. MSP detector
+###### Test of MaxSoftMax detector
+# 1. MSP detector
 
 # **Stage 2**: Create the OOD detector
 # Call MaxSoftmax detector on Cifar-10 and Cifar-100
@@ -292,7 +292,6 @@ MSP_detector_2 = Detector2.call_detector(MaxSoftmax)
 # fit the detector to training data
 MSP_detector_1.fit(train_loaderC10, device=device)
 MSP_detector_2.fit(train_loaderC100, device=device)
-
 
 # **Stage 3**: Evaluate Detector
 # Below we will evaluate the baseline detector on 6 OOD datasets: SVHN, Textures, LSUNCrop, LSUNResize, TinyImageNetCrop, and TinyImageNetResize.
