@@ -51,6 +51,6 @@ In this project, we used the pre-trained weights on Cifar-10 and Cifar-100 for D
 - [WRN-10-28](https://www.dropbox.com/s/uiye5nw0uj6ie53/wideresnet100.pth.tar.gz) trained on CIFAR-100
 
 ### License
-Refer to the [LICENSE]()
+Refer to the [LICENSE](https://github.com/naftalindeapo/OOD-Detection/blob/main/LICENSE)
 
 
