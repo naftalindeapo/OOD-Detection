@@ -17,6 +17,7 @@ To evaluate the performance of the OOD detection methods used in our project a r
 ![alt text](https://drive.google.com/uc?id=1pBQbR1xYrz7bAnBlY8GdzKDMfRoDXUtV)
 
 Below is a detailed visualization of the OOD detection performance results using the five methods across the two models.
+
 ![alt text](https://drive.google.com/uc?id=1XdWQtQyp3feW_snwUxiFy7t_6oxZDIKp)
 ![alt text](https://drive.google.com/uc?id=1QJRd69ef4UsNf1euPO0yt8ixhxJoCyzQ) 
 
