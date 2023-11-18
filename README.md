@@ -7,6 +7,10 @@ To evaluate the performance of the OOD detection methods used in our project a r
 
 ![alt text](https://drive.google.com/uc?id=1pBQbR1xYrz7bAnBlY8GdzKDMfRoDXUtV)
 
+Below is a detailed visualization of the OOD detection performance results using the five methods across the two models.
+![alt text](https://drive.google.com/uc?id=1Rso9pBczr5hr2KT9ANe8JvyyFGyWvtDw) 
+![alt text](https://drive.google.com/uc?id=1IkXqoc47m-KrvLoXgOKpo6nhKl4D4I3N) 
+
 
 ## Pre-trained Models
 In this project, I used four neural networks: (1.) two DenseNet-BC networks trained on Cifar-10 and Cifar-100 respectively, and (2.) Two Wide ResNet networks trained on Cifar-10 and Cifar-100. The PyTorch implementation of the DenseNet-BC and Wide ResNet are provided by [Andreas Veit](https://github.com/andreasveit/densenet-pytorch), and [Sergey Zagoruyko](https://github.com/szagoruyko/wide-residual-networks), respectively. The in-distribution (ID) test error rates of the two models are given in the table below.
@@ -14,5 +18,7 @@ In this project, I used four neural networks: (1.) two DenseNet-BC networks trai
 | -------------  |:-------------:| ---------:|
 | Dense-BC       | 5.16          | 24.06     |
 | WRN-28-10      | 5.93          | 25.10     |
+  
+
 
 
