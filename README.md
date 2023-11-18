@@ -43,5 +43,14 @@ three OOD datasets.
 - [Tiny-ImageNet (resize)](https://www.dropbox.com/s/kp3my3412u5k9rl/Imagenet_resize.tar.gz)
 - [LSUN (resize)](https://www.dropbox.com/s/moqh2wh8696c3yl/LSUN_resize.tar.gz)
 
+### Download the pre-trained weights
+In this project, we used the pre-trained weights on Cifar-10 and Cifar-100 for DenseNet-BC, and Wide ResNet provided in Liang's Git  [repository](https://github.com/facebookresearch/odin). Here are the download links for the four pre-trained models.
+- [DenseNet-BC](https://www.dropbox.com/s/wr4kjintq1tmorr/densenet10.pth.tar.gz) trained on Cifar-10
+- [DenseNet-BC](https://www.dropbox.com/s/vxuv11jjg8bw2v9/densenet100.pth.tar.gz) trained on Cifar-100
+- [WRN-10-28](https://www.dropbox.com/s/uiye5nw0uj6ie53/wideresnet10.pth.tar.gz) trained on CIFAR-10
+- [WRN-10-28](https://www.dropbox.com/s/uiye5nw0uj6ie53/wideresnet100.pth.tar.gz) trained on CIFAR-100
+
+### License
+Refer to the [LICENSE]()
 
 
